@@ -1,0 +1,6 @@
+com\qa\util\TestUtil.class
+com\qa\client\RestClient.class
+com\qa\data\Employees.class
+com\qa\data\Users.class
+com\qa\ExtentReportListener\ExtentReporterNG.class
+com\qa\base\TestBase.class

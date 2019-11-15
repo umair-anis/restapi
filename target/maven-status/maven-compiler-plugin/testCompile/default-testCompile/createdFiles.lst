@@ -1,0 +1,4 @@
+com\qa\tests\UpdateAPITest.class
+com\qa\tests\PostAPITest.class
+com\qa\tests\DeleteAPITest.class
+com\qa\tests\GetAPITest.class

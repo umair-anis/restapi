@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 4.559 sec <<< FAILURE!
+postAPITest(com.qa.tests.PostAPITest)  Time elapsed: 1.447 sec  <<< FAILURE!
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.qa.client.RestClient.post(RestClient.java:63)
+	at com.qa.tests.PostAPITest.postAPITest(PostAPITest.java:65)
+Caused by: org.apache.http.ProtocolException: Target host is not specified
+	at org.apache.http.impl.conn.DefaultRoutePlanner.determineRoute(DefaultRoutePlanner.java:71)
+	at org.apache.http.impl.client.InternalHttpClient.determineRoute(InternalHttpClient.java:125)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	... 39 more
+
+getAPITestWithoutHeaders(com.qa.tests.GetAPITest)  Time elapsed: 0.01 sec  <<< FAILURE!
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.qa.client.RestClient.get(RestClient.java:26)
+	at com.qa.tests.GetAPITest.getAPITestWithoutHeaders(GetAPITest.java:45)
+Caused by: org.apache.http.ProtocolException: Target host is not specified
+	at org.apache.http.impl.conn.DefaultRoutePlanner.determineRoute(DefaultRoutePlanner.java:71)
+	at org.apache.http.impl.client.InternalHttpClient.determineRoute(InternalHttpClient.java:125)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	... 39 more
+
+getAPITestWithHeaders(com.qa.tests.GetAPITest)  Time elapsed: 0.006 sec  <<< FAILURE!
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.qa.client.RestClient.get(RestClient.java:40)
+	at com.qa.tests.GetAPITest.getAPITestWithHeaders(GetAPITest.java:108)
+Caused by: org.apache.http.ProtocolException: Target host is not specified
+	at org.apache.http.impl.conn.DefaultRoutePlanner.determineRoute(DefaultRoutePlanner.java:71)
+	at org.apache.http.impl.client.InternalHttpClient.determineRoute(InternalHttpClient.java:125)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	... 39 more
+

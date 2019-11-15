@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RestAPI Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+
+	<test name="RestAPI Test Cases">
+		<classes>
+			<class name="com.qa.tests.GetAPITest"></class>
+			<class name="com.qa.tests.PostAPITest"></class>
+			<class name="com.qa.tests.UpdateAPITest"></class>
+			<class name="com.qa.tests.DeleteAPITest"></class>
+
+		</classes>
+	</test>
+</suite>
